@@ -1,0 +1,91 @@
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+      text-align: center;
+      font-style: italic;
+      margin: 30px 0px 30px 0px;
+}
+
+.odiv{
+    content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+position: relative;
+margin: 0 auto;
+}
+
+.ediv1{
+    background-color:rgb(185, 183, 183);
+    border: solid;
+    width: 300px;
+    display: inline-block;
+    margin: 15px;
+
+
+}
+
+.eh1{
+    background-color:orangered;
+    border-bottom: solid;
+    border-left: solid;
+    display: inline;
+    float: right;
+    width: 150px;
+}
+.eh2{
+    background-color:rgb(240, 31, 16);
+    border-bottom: solid;
+    border-left: solid;
+    display: inline;
+    float: right;
+    width: 150px;
+}
+.eh3{
+    background-color:rgb(238, 255, 0);
+    border-bottom: solid;
+    border-left: solid;
+    display: inline;
+    float: right;
+    width: 150px;
+}
+p{
+    clear: both;
+    padding: 10px;
+
+}
+
+/********** desktop  devices only **********/
+@media (min-width: 992px) {
+    .ediv1 {
+        float:inherit;
+		width: 23.33%; 
+  }
+}
+/********** tablet  devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+    .ediv1 {
+			float: inherit;
+			width: 30%;
+			margin-left: 15px;
+		}
+		.ediv2 {
+			float: inherit;
+			width: 63%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+/********** mobile  devices only **********/
+@media (max-width: 768px){
+    .ediv1 {
+			float: inherit;
+			width: 60%;
+		}
+	}
+
